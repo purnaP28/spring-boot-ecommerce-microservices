@@ -8,7 +8,7 @@ pipeline {
          }
         stage ('build') {
              steps{
-                sh "mvn clean install"
+                sh "mvn -f order-serice/pom.xml clean install"
              }
          }   
       }
